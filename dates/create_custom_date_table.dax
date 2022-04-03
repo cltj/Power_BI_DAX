@@ -1,0 +1,32 @@
+// Create a custom data table between two spesific dates
+Dates = CALENDAR(DATE(2021,9,8), DATE(2022,3,31))
+
+// From there you can create a year column (2021)
+Year = YEAR([Date])
+
+// A Quarter column (1)
+Quarter = Quarter([Date]))
+
+// A month column (9)
+Month = MONTH([Date])
+
+// A week column- week number (32)
+Week = WEEKNUM(([Date]))
+
+// A day column (15)
+Day = DAY([Date])
+
+// The month name (September)
+MonthName = FORMAT([Date],"mmmm")
+
+// The day of the week (Friday)
+DayOfWeek = FORMAT([Date], "DDDD")
+
+// The weekday number (5)
+WeekdayNumber = WEEKDAY([Date])
+
+// The quarter name (Q1)
+QuarterName = FORMAT('Dates'[Date],"\Qq")
+
+
+
